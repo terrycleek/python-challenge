@@ -42,6 +42,12 @@ Link [Here](https://www.python.org/)
    git commit -m "First commit"
    git push
    ```
+-Download Module 3 Challenge Files
+Link[Here](https://static.bc-edx.com/data/dl-1-2/m3/lms/starter/Starter_Code.zip)
+
+-Place files in appropraite folder. 
+
+-Using Python to complete both assignments along with pandas dependency to read both csv files and import data from csv into dataframes to use the data provided.
 
 
 
