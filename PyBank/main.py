@@ -34,7 +34,17 @@ greatest_decrease_amount = max_decrease_row["Profit Change"].values[0]
 print("Financial Analysis")
 print("---------------------------")
 print(f"Total Months: {total_months}")
-print(f"Total: ${net_total:.2f}")
+print(f"Total: ${net_total}")
 print(f"Average Change: ${average_change:.2f}")
-print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase_amount:.2f})")
-print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease_amount:.2f})")
+print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase_amount:.0f})")
+print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease_amount:.0f})")
+
+# Save the results to a text file
+with open("PyBank.txt", "w") as f:
+    f.write("Financial Analysis\n")
+    f.write("---------------------------\n")
+    f.write(f"Total Months: {total_months}\n")
+    f.write(f"Total: ${net_total:.2f}\n")
+    f.write(f"Average Change: ${average_change:.2f}\n")
+    f.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase_amount:.0f})\n")
+    f.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease_amount:.0f})\n")
